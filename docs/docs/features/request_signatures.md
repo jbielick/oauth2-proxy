@@ -7,7 +7,7 @@ If `signature_key` is defined, proxied requests will be signed with the
 `GAP-Signature` header, which is a [Hash-based Message Authentication Code
 (HMAC)](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code)
 of selected request information and the request body [see `SIGNATURE_HEADERS`
-in `oauthproxy.go`](https://github.com/oauth2-proxy/oauth2-proxy/blob/master/oauthproxy.go).
+in `oauthproxy.go`](https://github.com/oauth2-proxy/oauth2-proxy/blob/220b3708fc4e1de5e30135b48c8d8a2ef7efd518/pkg/upstream/http.go#L26).
 
 `signature_key` must be of the form `algorithm:secretkey`, (ie: `signature_key = "sha1:secret0"`)
 
